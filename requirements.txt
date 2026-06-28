@@ -1,0 +1,7 @@
+flask>=3.0
+edge-tts>=6.0
+openai-whisper
+feedparser>=6.0
+trafilatura>=1.8
+anthropic>=0.40
+google-genai>=0.3

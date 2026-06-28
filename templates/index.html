@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faceless Reels Generator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a class="logo" href="/">
+      <span class="logo-badge">▶</span>
+      Faceless Reels
+    </a>
+    <nav class="nav-tabs" id="navTabs">
+      <a href="#content"  class="nav-tab">Content</a>
+      <a href="#voice"    class="nav-tab">Voice</a>
+      <a href="#video"    class="nav-tab">Video</a>
+      <a href="#posting"  class="nav-tab">Posting</a>
+      <a href="#log"      class="nav-tab">Log</a>
+      <a href="#history"  class="nav-tab">History</a>
+    </nav>
+    <button class="btn-generate" id="generateBtn">
+      <span id="generateIcon">▶</span>
+      <span id="generateLabel">Generate Video</span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <div class="settings-grid">
+
+    <!-- Content -->
+    <section id="content" class="section">
+      <div class="section-header">
+        <div class="section-icon">✍</div>
+        <span class="section-title">Content</span>
+      </div>
+
+      <div class="form-group">
+        <label for="niche">Niche</label>
+        <select id="niche">
+          <option value="scary-stories">Scary Stories</option>
+          <option value="scp-stories">SCP Stories</option>
+          <option value="history-facts">History Facts</option>
+          <option value="mythology">Mythology</option>
+          <option value="true-crime">True Crime</option>
+          <option value="life-advice">Life Advice</option>
+          <option value="science-facts">Science Facts</option>
+          <option value="trending-news">Trending News/Tech</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Custom Topic <span class="label-hint">(optional)</span></label>
+        <textarea id="topic" placeholder="Leave blank to auto-generate from niche…"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="persona">Channel Persona <span class="label-hint">(optional — used for Trending News)</span></label>
+        <textarea id="persona" placeholder="e.g. energetic tech reporter, deadpan skeptic…"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Tone</label>
+        <div class="pill-group">
+          <button class="pill active" data-group="tone" data-value="dramatic">Dramatic</button>
+          <button class="pill" data-group="tone" data-value="educational">Educational</button>
+          <button class="pill" data-group="tone" data-value="mysterious">Mysterious</button>
+          <button class="pill" data-group="tone" data-value="casual">Casual</button>
+          <button class="pill" data-group="tone" data-value="dark">Dark</button>
+          <button class="pill" data-group="tone" data-value="motivational">Motivational</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voice -->
+    <section id="voice" class="section">
+      <div class="section-header">
+        <div class="section-icon">🎙</div>
+        <span class="section-title">Voice</span>
+      </div>
+
+      <div class="form-group">
+        <label for="voiceModel">Voice Model</label>
+        <select id="voiceModel">
+          <option value="en-US-GuyNeural">Guy — US Male</option>
+          <option value="en-US-JennyNeural">Jenny — US Female</option>
+          <option value="en-US-AriaNeural">Aria — US Female</option>
+          <option value="en-GB-RyanNeural">Ryan — UK Male</option>
+          <option value="en-AU-NatashaNeural">Natasha — AU Female</option>
+          <option value="en-IN-NeerjaNeural">Neerja — IN Female</option>
+          <option value="en-US-ChristopherNeural">Christopher — US Male (Deep, Authoritative)</option>
+          <option value="en-GB-ThomasNeural">Thomas — UK Male (Deep, Ominous)</option>
+          <option value="en-US-EricNeural">Eric — US Male (Low, Gravelly)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Speaking Speed</label>
+        <div class="slider-row">
+          <input type="range" id="speed" min="0.5" max="2.0" step="0.1" value="1.3"
+                 data-display="speedVal" data-unit="x">
+          <span class="slider-value" id="speedVal">1.3x</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Video Length</label>
+        <div class="slider-row">
+          <input type="range" id="duration" min="30" max="90" step="5" value="60"
+                 data-display="durationVal" data-unit="s">
+          <span class="slider-value" id="durationVal">60s</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="language">Language</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="de">German</option>
+          <option value="pt">Portuguese</option>
+          <option value="ar">Arabic</option>
+        </select>
+      </div>
+    </section>
+  </div>
+
+  <div class="settings-grid">
+
+    <!-- Video -->
+    <section id="video" class="section">
+      <div class="section-header">
+        <div class="section-icon">🎬</div>
+        <span class="section-title">Video</span>
+      </div>
+
+      <div class="form-group">
+        <label>Background Style <span class="label-hint">Cached gameplay/POV footage, random slice per run</span></label>
+        <div class="pill-group">
+          <button class="pill active" data-group="background" data-value="minecraft-parkour">Minecraft Parkour</button>
+          <button class="pill" data-group="background" data-value="construction-pov">Construction POV</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="toggle-row">
+          <div class="toggle-label">
+            <span>Background Music</span>
+            <small>YouTube Audio Library (royalty-free)</small>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" id="music" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Posting -->
+    <section id="posting" class="section">
+      <div class="section-header">
+        <div class="section-icon">📤</div>
+        <span class="section-title">Posting</span>
+      </div>
+
+      <div class="form-group">
+        <label>Platforms</label>
+        <div class="platform-group">
+          <button class="platform-btn" data-platform="youtube">
+            <span class="platform-icon">▶</span>
+            YouTube
+          </button>
+          <button class="platform-btn" data-platform="tiktok">
+            <span class="platform-icon">♪</span>
+            TikTok
+          </button>
+          <button class="platform-btn" data-platform="instagram">
+            <span class="platform-icon">◉</span>
+            Instagram
+          </button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="scheduleType">Schedule</label>
+        <select id="scheduleType">
+          <option value="now">Post immediately</option>
+          <option value="schedule">Schedule for later</option>
+        </select>
+        <div id="scheduleTime" class="hidden" style="margin-top:10px">
+          <input type="datetime-local" id="scheduledAt">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="toggle-row">
+          <div class="toggle-label">
+            <span>Auto-generate title</span>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" id="autoTitle" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+        <div class="toggle-row">
+          <div class="toggle-label">
+            <span>Auto-generate hashtags</span>
+          </div>
+          <label class="toggle">
+            <input type="checkbox" id="autoHashtags" checked>
+            <span class="toggle-slider"></span>
+          </label>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Pipeline Log -->
+  <section id="log" class="section">
+    <div class="section-header">
+      <div class="section-icon">⚡</div>
+      <span class="section-title">Pipeline Log</span>
+      <span class="log-status" id="logStatus">idle</span>
+    </div>
+
+    <div id="pipelineSteps" class="pipeline-steps">
+      <div class="pipeline-idle">Click <strong>Generate Video</strong> to start</div>
+    </div>
+
+    <div class="log-output" id="logOutput"></div>
+  </section>
+
+  <!-- History -->
+  <section id="history" class="section">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <span class="section-title">History</span>
+      <button class="btn-sm" id="clearHistoryBtn" style="margin-left:auto">Clear all</button>
+    </div>
+    <div class="history-list" id="historyList">
+      <div class="empty-state">
+        <div class="empty-icon">📭</div>
+        <p>No videos generated yet</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

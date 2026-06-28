@@ -1,0 +1,20 @@
+# Local tool config, not project source
+.claude/
+
+# Secrets — never commit
+.env
+data/youtube_client_secret.json
+data/youtube_token.json
+
+# Generated media — large, regenerated each run
+output/
+ready_to_post/
+release_assets/
+assets/footage_cache/
+
+# Python
+__pycache__/
+*.pyc
+
+# Windows
+*.bat
