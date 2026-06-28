@@ -75,7 +75,7 @@ def curate(niche: str, log, max_stories: int = 30) -> list:
     )
 
     try:
-        raw = llm.complete(system, prompt, max_tokens=4000, temperature=0.3)
+        raw = llm.complete(system, prompt, max_tokens=4000, temperature=0.3, log=log)
     except Exception as exc:
         raise RuntimeError(f'Curation request failed: {exc}')
 

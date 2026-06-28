@@ -62,7 +62,7 @@ def _generate_metadata(config: dict, log) -> tuple:
         text  = llm.complete(
             'You write viral short-form video titles and hashtags optimized for the '
             'YouTube Shorts and TikTok algorithms. Output only JSON.',
-            prompt, max_tokens=300, temperature=0.9,
+            prompt, max_tokens=300, temperature=0.9, log=log,
         )
         match = re.search(r'\{.*\}', text, re.DOTALL)
         data  = json.loads(match.group()) if match else {}

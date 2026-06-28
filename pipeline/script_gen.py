@@ -118,11 +118,11 @@ def generate_from_story(story: dict, niche: str, config: dict, log) -> str:
         f'{{"scripts": [{{"hook": "...", "script": "..."}}, {{"hook": "...", "script": "..."}}]}}'
     )
 
-    log(f'  ->{llm.current_model()} | niche: {niche} | mode: {"suspense" if narrative else "news"}', 'script')
+    log(f'  -> niche: {niche} | mode: {"suspense" if narrative else "news"}', 'script')
     log('  -> Brainstorming 5 hooks, writing top 2 scripts...', 'script')
 
     try:
-        text = llm.complete(system, prompt, max_tokens=1500, temperature=0.8)
+        text = llm.complete(system, prompt, max_tokens=1500, temperature=0.8, log=log)
     except Exception as exc:
         raise RuntimeError(f'Script generation failed: {exc}')
 

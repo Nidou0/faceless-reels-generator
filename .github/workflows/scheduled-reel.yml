@@ -13,8 +13,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 45
     env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-      LLM_PROVIDER: gemini
 
     steps:
       - name: Checkout
