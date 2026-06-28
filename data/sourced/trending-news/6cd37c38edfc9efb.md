@@ -1,0 +1,7 @@
+On July 1, it will be illegal for streaming platforms to play ads louder than the content being watched in California.
+
+As The Hollywood Reporter highlighted this week, California Governor Gavin Newsom signed a bill (SB 576) in October 2025 that prohibits any video streaming service from transmitting the “audio of commercial advertisements louder than the video content the advertisements accompany” in the state.
+
+The law brings some parity between streaming services and broadcast, cable, and satellite TV providers, which, under The Commercial Advertisement Loudness Mitigation (CALM) Act, can only play commercials at “the same average volume as the programs they accompany,” the FCC says.
+
+We haven’t seen any streaming services explain how they will comply with the California law or if they will apply the volume adjustments to US streams outside of California. Although streaming providers could opt to only apply volume adjustments to customers that they detect as being in California, it’s reasonable to expect companies to apply these changes elsewhere. As it stands, streaming services will already have to apply the ad loudness requirements to streams in Illinois by July 1, 2027, per a bill passed this month.

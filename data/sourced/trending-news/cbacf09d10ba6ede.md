@@ -1,0 +1,11 @@
+A 60-year-old man in Spain went to the doctor complaining of a headache that he couldn’t shake. It had started two weeks prior and was only getting worse. He also said he had noticed subtle changes in his behavior.
+
+In a neurological exam, doctors found he had a mild delay in his movements, but no other deficits. His blood work was generally normal except for elevated IgE, a signal of immune responses linked to allergies, autoimmune disease, and parasitic infections. The doctors did a computed tomography (CT) scan of his head and saw much more obvious evidence of a problem: There were multiple lesions distributed throughout his brain accompanied by swelling.
+
+In a case report in Emerging Infectious Diseases*, *the doctors reported working through the possible conditions that could explain all the findings. They noted that the man was not immunocompromised and had never traveled internationally. Their top suspicion was metastatic cancer.
+
+For his headache, the doctors put him on an anti-inflammatory corticosteroid, and he finally got some relief. They then began an extensive series of tests to look for the cancer they thought had spread to his brain. This included a whole-body, contrast-enhanced CT scan, a colonoscopy, and a hybrid positron emission tomography/CT scan often used to map cancer. But the tests didn’t reveal any malignancies.
+
+The doctors did another brain scan, this time with a magnetic resonance imaging (MRI) scan to get a better look at the lesions. With the more detailed imaging, they saw clearly that the lesions weren’t tumors; they were encapsulated tapeworm larvae. On the MRI, the doctors could see the worms’ heads, called scolexes.
+
+The finding surprised the doctors since tapeworms aren’t endemic to Spain and he said he hadn’t traveled. However, the man may have been exposed during his work. Until 10-years prior, when he retired, he had worked in construction, often working alongside people who had migrated from regions where pork tapeworms (*Taenia solium*) are endemic. The parasitic worms can spread through the fecal-oral route. His doctors speculated his infection might have been a rare case of cryptic transmission from sharing meals and bathrooms with his coworkers, one of whom apparently had a tapeworm infection.
