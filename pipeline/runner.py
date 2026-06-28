@@ -7,6 +7,10 @@ _READY_DIR = 'ready_to_post'
 def run(config: dict, q) -> None:
     from . import script_gen, tts, footage, subtitles, render, posting, sourcing, curation
 
+    os.makedirs('output', exist_ok=True)
+    os.makedirs('data', exist_ok=True)
+    os.makedirs(_READY_DIR, exist_ok=True)
+
     def ts():
         return datetime.now().strftime('%H:%M:%S')
 

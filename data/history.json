@@ -1,5 +1,21 @@
 [
   {
+    "date": "2026-06-28T21:42:47.465605",
+    "niche": "scp-stories",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [],
+    "output": "output\\reel_20260628_214126.mp4"
+  },
+  {
+    "date": "2026-06-28T21:38:11.207286",
+    "niche": "true-crime",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [],
+    "output": "output\\reel_20260628_213647.mp4"
+  },
+  {
     "date": "2026-06-28T18:06:05.961768",
     "niche": "scp-stories",
     "tone": "dramatic",
