@@ -25,7 +25,7 @@ _SOURCE_URL = {
 # reliable path for ephemeral CI runners. yt-dlp from YouTube is the fallback
 # (slower, and cloud datacenter IPs get rate-limited/blocked by YouTube).
 _RELEASE_URL = {
-    'minecraft-parkour': 'https://github.com/REPLACE_OWNER/REPLACE_REPO/releases/download/footage-v1/minecraft_parkour_clip.mp4',
+    'minecraft-parkour': 'https://github.com/Nidou0/faceless-reels-generator/releases/download/footage-v1/minecraft_parkour_clip.mp4',
 }
 
 
