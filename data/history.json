@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-06-28T20:19:08.989678",
+    "niche": "scp-stories",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260628_201735.mp4"
+  },
+  {
     "date": "2026-06-28T18:11:45.709706",
     "niche": "scary-stories",
     "tone": "dramatic",
