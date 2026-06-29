@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-06-29T05:56:59.482575",
+    "niche": "true-crime",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260629_055449.mp4"
+  },
+  {
     "date": "2026-06-29T00:15:17.167352",
     "niche": "mythology",
     "tone": "dramatic",
