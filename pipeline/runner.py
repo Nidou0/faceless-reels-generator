@@ -5,7 +5,7 @@ _READY_DIR = 'ready_to_post'
 
 
 def run(config: dict, q) -> None:
-    from . import script_gen, tts, footage, subtitles, render, posting, sourcing, curation
+    from . import script_gen, tts, footage, subtitles, render, posting, sourcing, curation, notify
 
     os.makedirs('output', exist_ok=True)
     os.makedirs('data', exist_ok=True)
@@ -74,6 +74,7 @@ def run(config: dict, q) -> None:
             log(f'Posting to {", ".join(platforms)}...', 'post', 'running')
             posting.post(output_path, config, log)
             log('Posted successfully', 'post', 'done')
+            notify.send(f'Posted: {niche} reel -> {", ".join(platforms)}\n{output_path}')
         else:
             log('No platforms selected — skipping post', 'post', 'done')
 
@@ -81,6 +82,7 @@ def run(config: dict, q) -> None:
         q.put({'type': 'done', 'output': output_path, 'time': ts()})
 
     except Exception as exc:
+        notify.send(f'Pipeline FAILED ({config.get("niche", "?")}): {exc}')
         err(f'Pipeline failed: {exc}')
 
 
