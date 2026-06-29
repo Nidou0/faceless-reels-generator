@@ -11,7 +11,7 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 25
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -38,6 +38,12 @@ jobs:
             ~/.cache/pip
             ~/.cache/whisper
           key: ${{ runner.os }}-pip-whisper-${{ hashFiles('requirements.txt') }}
+
+      - name: Cache background footage
+        uses: actions/cache@v4
+        with:
+          path: assets/footage_cache
+          key: footage-v1-minecraft-parkour
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt
