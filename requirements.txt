@@ -9,3 +9,4 @@ google-genai>=0.3
 yt-dlp>=2024.1
 google-auth-oauthlib>=1.2
 google-api-python-client>=2.100
+playwright>=1.40

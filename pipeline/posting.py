@@ -1,7 +1,8 @@
-"""Real posting: YouTube Data API v3.
+"""Real posting: YouTube Data API v3, TikTok via browser automation.
 
-TikTok/Instagram are not implemented yet — see TikTok ToS/risk discussion
-before building either an API-review path or browser automation.
+TikTok posting drives the web upload UI directly (no official API) — violates
+TikTok ToS, ban risk accepted by user. See pipeline/tiktok_poster.py.
+Instagram is not implemented yet.
 """
 import json
 import os
@@ -35,7 +36,9 @@ def post(video_path: str, config: dict, log) -> None:
     for platform in platforms:
         if platform == 'youtube':
             _post_youtube(video_path, title, hashtags, log)
-        elif platform in ('tiktok', 'instagram'):
+        elif platform == 'tiktok':
+            _post_tiktok(video_path, title, hashtags, log)
+        elif platform == 'instagram':
             log(f'  -> {platform} posting not yet implemented — skipping', 'post')
         else:
             log(f'  -> Unknown platform: {platform}', 'post')
@@ -149,3 +152,9 @@ def _post_youtube(video_path: str, title: str, hashtags: list, log) -> None:
 
     video_id = response.get('id')
     log(f'  -> Published: https://youtube.com/shorts/{video_id}', 'post')
+
+
+def _post_tiktok(video_path: str, title: str, hashtags: list, log) -> None:
+    from . import tiktok_poster
+    caption = f'{title} {" ".join(hashtags)}'
+    tiktok_poster.post(video_path, caption, log)
