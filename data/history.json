@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-06-30T17:59:47.698910",
+    "niche": "scary-stories",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260630_175734.mp4"
+  },
+  {
     "date": "2026-06-30T12:14:17.427341",
     "niche": "science-facts",
     "tone": "dramatic",
