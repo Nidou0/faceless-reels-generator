@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-06-30T09:39:23.039432",
+    "niche": "life-advice",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260630_093729.mp4"
+  },
+  {
     "date": "2026-06-30T05:09:12.977921",
     "niche": "true-crime",
     "tone": "dramatic",
