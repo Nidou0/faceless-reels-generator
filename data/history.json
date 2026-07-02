@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-02T21:12:20.929930",
+    "niche": "mythology",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260702_211001.mp4"
+  },
+  {
     "date": "2026-07-02T19:28:54.555654",
     "niche": "history-facts",
     "tone": "dramatic",
