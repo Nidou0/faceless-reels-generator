@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-04T23:13:31.452552",
+    "niche": "scary-stories",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260704_231101.mp4"
+  },
+  {
     "date": "2026-07-04T21:03:39.520774",
     "niche": "science-facts",
     "tone": "dramatic",
@@ -488,15 +498,5 @@
       "youtube"
     ],
     "output": "output/reel_20260628_181016.mp4"
-  },
-  {
-    "date": "2026-06-28T15:14:48.691419",
-    "niche": "science-facts",
-    "tone": "dramatic",
-    "duration": 60,
-    "platforms": [
-      "youtube"
-    ],
-    "output": "output/reel_20260628_151357.mp4"
   }
 ]
