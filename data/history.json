@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-04T11:32:17.812644",
+    "niche": "scp-stories",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260704_113004.mp4"
+  },
+  {
     "date": "2026-07-04T09:29:09.717735",
     "niche": "scary-stories",
     "tone": "dramatic",
@@ -480,13 +490,5 @@
     "duration": 60,
     "platforms": [],
     "output": "output\\reel_20260627_170341.mp4"
-  },
-  {
-    "date": "2026-06-27T16:56:43.132577",
-    "niche": "scary-stories",
-    "tone": "dramatic",
-    "duration": 60,
-    "platforms": [],
-    "output": "output\\reel_20260627_165344.mp4"
   }
 ]
