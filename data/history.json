@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-04T17:10:33.801290",
+    "niche": "true-crime",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260704_170808.mp4"
+  },
+  {
     "date": "2026-07-04T15:11:45.275911",
     "niche": "mythology",
     "tone": "dramatic",
@@ -484,15 +494,5 @@
     "duration": 60,
     "platforms": [],
     "output": "output\\reel_20260628_213647.mp4"
-  },
-  {
-    "date": "2026-06-28T18:06:05.961768",
-    "niche": "scp-stories",
-    "tone": "dramatic",
-    "duration": 60,
-    "platforms": [
-      "youtube"
-    ],
-    "output": "output\\reel_20260628_180218.mp4"
   }
 ]
