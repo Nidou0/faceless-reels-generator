@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-04T21:03:39.520774",
+    "niche": "science-facts",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260704_210132.mp4"
+  },
+  {
     "date": "2026-07-04T19:17:09.633927",
     "niche": "life-advice",
     "tone": "dramatic",
@@ -488,13 +498,5 @@
       "youtube"
     ],
     "output": "output/reel_20260628_151357.mp4"
-  },
-  {
-    "date": "2026-06-28T21:42:47.465605",
-    "niche": "scp-stories",
-    "tone": "dramatic",
-    "duration": 60,
-    "platforms": [],
-    "output": "output\\reel_20260628_214126.mp4"
   }
 ]
