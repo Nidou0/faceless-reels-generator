@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-07-04T02:53:48.058808",
+    "niche": "science-facts",
+    "tone": "dramatic",
+    "duration": 60,
+    "platforms": [
+      "youtube"
+    ],
+    "output": "output/reel_20260704_025201.mp4"
+  },
+  {
     "date": "2026-07-03T23:08:41.597514",
     "niche": "life-advice",
     "tone": "dramatic",
